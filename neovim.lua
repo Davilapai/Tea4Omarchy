@@ -1,7 +1,7 @@
 return {
   {
     "bjarneo/aether.nvim",
-    branch = "v2",
+    branch = "v3",
     name = "aether",
     priority = 1000,
     opts = {
@@ -9,27 +9,47 @@ return {
       colors = {
         -- Background colors
         bg = "#1b1f20",
-        bg_dark = "#1b1f20",
-        bg_highlight = "#3a3d41",
+        dark_bg = "#161a1b",
+        darker_bg = "#121516",
+        lighter_bg = "#252b2c",
 
         -- Foreground colors
         fg = "#d4d4d4",
-        fg_dark = "#60716d",
-        comment = "#60716d",
+        dark_fg = "#acad94",
+        light_fg = "#e7e7e7",
+        bright_fg = "#ffffff",
+        muted = "#60716d", -- Comments
 
         -- Accent colors
         red = "#d8866a",
-        orange = "#fb916f",
-        yellow = "#e5c185",
-        green = "#92ba92",
-        cyan = "#4daaaa",
-        blue = "#408da1",
-        purple = "#5590a4",
-        magenta = "#d670d6",
+        orange = "#4daaaa", -- Numbers / Booleans
+        yellow = "#e5c185", -- Types / Structures
+        green = "#408da1",  -- Strings
+        cyan = "#4daaaa",   -- PreProc
+        blue = "#d8866a",   -- Functions
+        purple = "#5590a4", -- Operators
+        bright_purple = "#92ba92", -- Keywords
+
+        -- Bright variants
+        bright_red = "#fb916f",
+        bright_yellow = "#e2c08d",
+        bright_green = "#92ba92",
+        bright_cyan = "#29b8db",
+        bright_blue = "#5590a4",
+        bright_purple = "#d670d6",
+
+        -- Theme-specific variables
+        accent = "#2d8f6d",
+        cursor = "#aeafad",
+        foreground = "#d4d4d4",
+        background = "#1b1f20",
+        selection = "#3a3d41",
+        selection_foreground = "#ffffff",
+        selection_background = "#3a3d41",
       },
       on_highlights = function(hl, c)
         hl.CursorLine = { bg = "#0d1107" } 
-        hl.CursorLineNr = { fg = "#c6c6c6", bold = true }
+        hl.CursorLineNr = { fg = c.accent, bold = true }
       end,
     },
     config = function(_, opts)
@@ -47,3 +67,4 @@ return {
     },
   },
 }
+
