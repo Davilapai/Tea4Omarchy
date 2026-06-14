@@ -1,0 +1,40 @@
+body.heroic {
+  --background: #1b1f20;
+  --background-darker: #141819;
+  --background-secondary: #252526;
+  --background-lighter: #3a3d41;
+  --accent: #2d8f6d;
+  --text-default: #d4d4d4;
+  --navbar-accent: #2d8f6d;
+  --navbar-active-background: #25292a;
+  --success: #92ba92;
+  --success-hover: #2d8f6d;
+  --primary: #2d8f6d;
+  --primary-hover: #2d8f6d;
+  --danger: #d8866a;
+  --danger-hover: #d8866a;
+  --anticheat-supported: #2d8f6d;
+  --anticheat-planned: #e5c185;
+  --icon-disabled: #858585;
+  --cancel-button: #3a3d41;
+  --anticheat-broken: #d8866a;
+
+  --accent-overlay: var(--accent);
+  --navbar-background: var(--background);
+  --body-background: var(--background-darker);
+  --current-background: var(--body-background);
+  --text-secondary: var(--text-default);
+  --text-tertiary: var(--background);
+  --navbar-active: var(--accent);
+  --input-background: var(--background);
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --anticheat-denied: var(--danger);
+  --anticheat-running: var(--text-default);
+  --text-title: var(--text-default);
+  --icons-background: var(--background-lighter);
+  --action-icon: var(--navbar-accent);
+  --action-icon-hover: var(--text-default);
+  --action-icon-active: var(--accent);
+  --neutral-06: var(--text-default);
+}
