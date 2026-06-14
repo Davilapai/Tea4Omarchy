@@ -45,7 +45,7 @@ This theme provides configs for every layer of the Omarchy stack:
 From the Omarchy Menu (`Super + Alt + Space`), go to **Install > Style > Theme** and paste the repo URL:
 
 ```
-https://github.com/vale-c/tea-leaves-4omarchy
+https://github.com/Davilapai/Tea4Omarchy
 ```
 
 Or install from the terminal:
