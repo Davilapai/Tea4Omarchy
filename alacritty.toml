@@ -7,6 +7,10 @@ foreground = '#d4d4d4'
 text = 'CellBackground'
 cursor = 'CellForeground'
 
+[colors.selection]
+text = '#1b1f20'
+background = '#fb916f'
+
 [colors.normal]
 # Normal colors used by applications
 black = '#1b1f20'
